@@ -10,9 +10,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.Optional;
+
 import static org.junit.Assert.assertEquals;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 
 @ExtendWith(MockitoExtension.class)
@@ -30,15 +31,47 @@ public class StudentServiceTest {
         newStudent.setName("assah");
         newStudent.setEmail("assah@yahoo.com");
 
-    //set up student repository mock to return the newstudent when save() is called k
                 when(studentRepository.save(newStudent)).thenReturn(newStudent);
 
         Student actualStudent = studentService.addStudent(newStudent);
 
         Assertions.assertEquals(newStudent, actualStudent);
 
-        //verifying that the student repository.save() was called with the newstudent
 
         verify(studentRepository).save(newStudent);
+    }
+
+    @Test
+    public void testDeleteStudent(){
+        //Arrange
+        long studentId = 1L;
+        Student expectedStudent = new Student();
+        expectedStudent.setName("assah");
+        expectedStudent.setEmail("assah@yahoo.com");
+
+        doNothing().when(studentRepository).deleteById(studentId);
+        //Act
+        studentService.deleteStudent(studentId);
+
+        //check on the StudentRepository.deleteById()
+
+        verify(studentRepository).deleteById(studentId);
+
+    }
+
+    @Test
+    public void getStudentById(){
+        long studentId = 1L;
+        Student expectedStudent = new Student();
+        expectedStudent.setName("assah");
+        expectedStudent.setEmail("assah@yahoo.com");
+        when(studentRepository.findById(studentId)).thenReturn(Optional.of(expectedStudent));
+
+        Student actualStudent = studentService.findStudentById(studentId);
+
+        Assertions.assertEquals(expectedStudent , actualStudent);
+
+        verify(studentRepository).findById(studentId);
+
     }
 }
