@@ -94,7 +94,7 @@
 				<configuration>
 					<testFailureIgnore>false</testFailureIgnore>
 					<includes>
-						<include>**/unit/*Test.java</include>
+						<include>**/unit/*</include>
 					</includes>
 				</configuration>
 			</plugin>
