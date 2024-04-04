@@ -1,4 +1,4 @@
-package com.bismark.test;
+package com.bismark.unit;
 
 import com.bismark.test.com.bismark.Student;
 import com.bismark.test.com.bismark.StudentRepository;

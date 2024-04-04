@@ -1,3 +1,5 @@
+package com.bismark.integration;
+
 import com.bismark.test.TestApplication;
 import com.bismark.test.com.bismark.Student;
 import com.bismark.test.com.bismark.StudentService;
