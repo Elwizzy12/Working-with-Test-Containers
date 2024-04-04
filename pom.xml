@@ -93,9 +93,9 @@
 				<version>2.22.2</version>
 				<configuration>
 					<testFailureIgnore>false</testFailureIgnore>
-					<excludes>
-						<exclude>**/unit/*Test.java</exclude>
-					</excludes>
+					<includes>
+						<include>**/unit/*Test.java</include>
+					</includes>
 				</configuration>
 			</plugin>
 		</plugins>
