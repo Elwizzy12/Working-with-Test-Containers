@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.bismark.unit.StudentServiceTest
--------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 3.087 s - in com.bismark.unit.StudentServiceTest
