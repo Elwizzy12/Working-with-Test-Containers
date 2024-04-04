@@ -59,17 +59,4 @@ public class StudentServiceIntegrationTest {
         Assertions.assertEquals(student.getEmail(), savedStudent.getEmail());
     }
 
-// @Sql(scripts = "classpath:delete-student-table.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
-// @Test
-// public void testDeleteStudent() {
-//     Student student = new Student();
-//     student.setName("assah");
-//     student.setEmail("assah@yahoo.com");
-//
-//     Student savedStudent = studentService.addStudent(student);
-//     Assertions.assertNotNull(savedStudent);
-//
-//     studentService.deleteStudent(savedStudent.getId());
-//     Assertions.assertNull(studentService.findStudentById(savedStudent.getId()));
-// }
 }
