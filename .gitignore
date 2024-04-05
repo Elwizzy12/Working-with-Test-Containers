@@ -10,8 +10,6 @@
 *.properties
 *.xml
 *.json
-*.yaml
-*.yml
 
 # IntelliJ IDEA
 .idea
