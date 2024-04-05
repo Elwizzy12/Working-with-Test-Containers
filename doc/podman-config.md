@@ -6,6 +6,7 @@ This documentation provides an overview of how the integration tests in the proj
 
 Before configuring the integration tests with Podman, ensure that the following prerequisites are met:
 
+
 1. Ubuntu Server: The integration test configuration described here is specific to an Ubuntu Server environment. Make sure you have an Ubuntu Server available to run the tests.
 
 2. Docker Registries: The integration tests rely on Docker images for the test containers. Ensure that the necessary Docker registries are accessible to pull the required images. By default, the configuration uses the `docker.io` registry.
