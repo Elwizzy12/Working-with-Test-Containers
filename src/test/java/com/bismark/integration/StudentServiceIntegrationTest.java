@@ -1,7 +1,10 @@
+package com.bismark.integration;
+
 import com.bismark.test.TestApplication;
 import com.bismark.test.com.bismark.Student;
 import com.bismark.test.com.bismark.StudentService;
 import org.junit.jupiter.api.*;
+
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
