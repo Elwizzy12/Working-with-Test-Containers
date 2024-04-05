@@ -44,5 +44,6 @@ public class StudentTest {
     @Test
     void beforeAll(){
         assertTrue(true);
+        System.out.print("hey");
     }
 }
