@@ -61,8 +61,6 @@ public class StudentServiceIntegrationTest {
        Assertions.assertNotNull(savedStudent);
        Assertions.assertEquals(student.getName(), savedStudent.getName());
        Assertions.assertEquals(student.getEmail(), savedStudent.getEmail());
-        System.out.print("hey");
-
    }
 
 // @Sql(scripts = "classpath:delete-student-table.sql", executionPhase = Sql.ExecutionPhase.BEFORE_TEST_METHOD)
