@@ -99,6 +99,7 @@
 						<configuration>
 							<includes>
 								<include>**/integrationtest/*</include>
+								<include>**/unittest/**</include>
 							</includes>
 						</configuration>
 					</plugin>
