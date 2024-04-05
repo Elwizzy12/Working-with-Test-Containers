@@ -102,14 +102,6 @@ The Maven configuration are defined into two parts:
                     <configuration>
                         <includes>
                             <include>**/integrationtest/*</include>
-                        </includes>
-                    </configuration>
-                </plugin>
-                <plugin>
-                    <artifactId>maven-surefire-plugin</artifactId>
-                    <version>2.22.2</version>
-                    <configuration>
-                        <includes>
                             <include>**/unittest/**</include>
                         </includes>
                     </configuration>
