@@ -40,8 +40,7 @@ public class StudentServiceIntegrationTest {
        postgreSQLContainer = new PostgreSQLContainer<>("postgres:13.3")
                .withDatabaseName("testdb")
                .withUsername("testuser")
-               .withPassword("testpassword")
-               .withNetworkMode("my-test-network");
+               .withPassword("testpassword");
                
        postgreSQLContainer.start();
    }
