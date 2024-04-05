@@ -19,4 +19,4 @@ jobs:
           java-version: 21
 
       - name: Build and test with Maven
-        run: mvn test
+        run: mvn clean install
