@@ -21,7 +21,7 @@ jobs:
                   maven-version: '3.9.6'
 
             - name: Install Podman
-              uses: actions/setup-podman@v2
+              run: sudo apt-get install -y podman  
 
             - name: Run unit tests
               run: mvn clean install
