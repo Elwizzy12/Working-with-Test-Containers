@@ -9,6 +9,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+//student
 @Entity
 @Data
 @AllArgsConstructor
