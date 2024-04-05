@@ -5,7 +5,7 @@ on:
         paths:
             - '**/integrationtest/**'
             - '**/unittest/**'
-        branches-ignore:
+        branches:
             - 'master'
             - 'main'
 
