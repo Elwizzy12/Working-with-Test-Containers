@@ -70,7 +70,7 @@ public class MyServiceIntegrationTest {
 ## Separating Test Files:
 
 - Create separate folders for unit tests (src/test/java/unittest) and integration tests (src/test/java/integrationtest).
-- Place all unit test files within the unittest folder and integration test files within the integrationtest folder. This promotes better organization and clarity
+- Place all unit test files within the unittest folder and integration test files within the integrationtest folder. This promotes better organization and clarity.
 
 ## Maven Configuration:
 
