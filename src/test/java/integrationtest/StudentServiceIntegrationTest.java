@@ -61,7 +61,7 @@ public class StudentServiceIntegrationTest {
        Assertions.assertNotNull(savedStudent);
        Assertions.assertEquals(student.getName(), savedStudent.getName());
        Assertions.assertEquals(student.getEmail(), savedStudent.getEmail());
-        // System.out.print("hey");
+        System.out.print("hey");
 
    }
 
