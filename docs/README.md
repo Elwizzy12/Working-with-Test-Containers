@@ -105,6 +105,15 @@ The Maven configuration are defined into two parts:
                         </includes>
                     </configuration>
                 </plugin>
+                <plugin>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>2.22.2</version>
+                    <configuration>
+                        <includes>
+                            <include>**/unittest/**</include>
+                        </includes>
+                    </configuration>
+                </plugin>
             </plugins>
         </build>
     </profile>
@@ -115,12 +124,12 @@ The Maven configuration are defined into two parts:
 
 - Unit Tests (Default): To run unit tests, simply execute mvn test on the command line. This will use the default configuration and run all unit tests within the unittest folder structure.
 
-- Integration Tests: To run integration tests specifically, you need to activate the ITs profile. You can achieve this by using mvn test -P ITs. This command instructs Maven to use the ITs profile, which includes the integration test configuration and runs only tests under the integrationtest folder.
+- Integration Tests: To run both unit and integration tests specifically, you need to activate the ITs profile. You can achieve this by using mvn test -P ITs. This command instructs Maven to use the ITs profile, which includes both the unit and integration tests configuration and runs both tests (unit and integration).
 
 ## Building the Project:
 
 - Using mvn clean install will by default only execute unit tests due to the default maven-surefire-plugin configuration.
-- To run the integration test during the build process, you can use mvn clean install -P ITs. This activates the ITs profile and executes integration tests.
+- To run the integration test during the build process, you can use mvn clean install -P ITs. This activates the ITs profile and executes both unit and integration tests.
 
 
 
