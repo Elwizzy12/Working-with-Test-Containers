@@ -2,7 +2,7 @@
 
 ## Introduction
 
-In software development, ensuring the quality and reliability of your code is paramount. Testing plays a critical role in this process, and Spring Boot applications benefit greatly from a well-defined testing strategy. Separating unit and integration tests offers a structured approach to achieving comprehensive code coverage and enhanced maintainability
+In software development, ensuring the quality and reliability of your code is paramount. Testing plays a critical role in this process, and Spring Boot applications benefit greatly from a well-defined testing strategy. Separating unit and integration tests offers a structured approach to achieving comprehensive code coverage and enhanced maintainability.
 
 Below is a breakdown of what this document will guide you through:
 
