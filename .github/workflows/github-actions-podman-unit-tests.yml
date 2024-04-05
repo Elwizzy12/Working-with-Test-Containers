@@ -4,9 +4,12 @@ on:
     push:
         paths:
             - '**/integrationtest/**'
-        branches:
-            - 'master'
-            - 'main'
+        branches: 'main'
+
+    pull_request:
+        paths:
+            - '**/integrationtest/**'
+        branches: 'main'
 
 jobs:
     build-and-test:
