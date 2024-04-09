@@ -1,7 +1,6 @@
 services:
   postgres:
     image: 'postgres:latest'
-
     environment:
       - 'POSTGRES_DB=test-container'
       - 'POSTGRES_PASSWORD=secret'
