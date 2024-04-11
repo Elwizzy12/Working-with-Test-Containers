@@ -85,7 +85,7 @@
 					</excludes>
 				</configuration>
 			</plugin>
-
+            <!--test-->
 			<!-- Maven Surefire Plugin for Unit Tests -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
