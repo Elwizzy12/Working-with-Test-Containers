@@ -10,11 +10,9 @@
 *.properties
 *.xml
 *.json
-*.yaml
-*.yml
 
 # IntelliJ IDEA
-.idea/
+.idea
 *.iws
 *.iml
 *.ipr
